@@ -136,7 +136,7 @@ body {
   width: 3.4rem;
   height: 3.2rem;
   position: absolute;
-  transform: translateY(-310px);
+  transform: translateY(-300px);
 }
 
 div.mainContainer {
@@ -292,7 +292,7 @@ h3.userOutputText {
     width: 3.4rem;
     height: 3.2rem;
     position: absolute;
-    transform: translateY(-240px);
+    transform: translateY(-245px);
   }
 
   h1 {
