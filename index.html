@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter v1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img id="logo" src="LRCrownWhite.png" alt="">
+    <div class="mainContainer">
+        <div class="mainTitle">
+            <h1>The Unit Converter</h1>
+        </div>
+        <div class="unitSelector">
+            <button class="selectorBtn tempSelector">Temp</button>
+            <button class="selectorBtn weightSelector">Weight</button>
+            <button class="selectorBtn distanceSelector">Distance</button>
+        </div>
+        <div class="mainUserInput">
+            <div class="userInput">
+                <form action="" id="mainForm">
+                    <div class="userInputBox"><input class="userInputBox-Input" type="text"
+                            placeholder="Enter Unit Here"></div>
+                    <!-- ===== Temperature ===== -->
+                    <section class="userTempInput">
+                        <div class="unitSelectors">
+                            <div class="options celsiusContainer">
+                                <label for="celsius">Celsius</label>
+                                <input type="checkbox" name="celsius" class="celsius">
+                            </div>
+                            <div class="options fahrenheitContainer">
+                                <label for="fahrenheit">Fahrenheit</label>
+                                <input type="checkbox" name="fahrenheit" class="fahrenheit">
+                            </div>
+                    </section>
+                    <!-- ===== Weight ===== -->
+                    <section class="userWeightInput">
+                        <div class="unitSelectors">
+                            <div class="options kilogramContainer">
+                                <label for="kilogram">Kilogram (kgs)</label>
+                                <input type="checkbox" name="kilogram" class="kilogram">
+                            </div>
+                            <div class="options poundContainer">
+                                <label for="pound">Pound (lbs)</label>
+                                <input type="checkbox" name="pound" class="pound">
+                            </div>
+                    </section>
+                    <!-- ===== Distance ===== -->
+                    <section class="userDistanceInput">
+                        <div class="unitSelectors">
+                            <div class="options kilometerContainer">
+                                <label for="kilometer">Kilometer (kms)</label>
+                                <input type="checkbox" name="kilometer" class="kilometer">
+                            </div>
+                            <div class="options milesContainer">
+                                <label for="miles">Miles (mi)</label>
+                                <input type="checkbox" name="miles" class="miles">
+                            </div>
+                    </section>
+                    <div class="userSubmit"><button class="userSubmit-Btn">Submit</button></div>
+                </form>
+            </div>
+
+        </div>
+        <div class="output">
+            <h3 class="userOutputText"></h3>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
